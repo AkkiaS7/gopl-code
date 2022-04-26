@@ -37,6 +37,8 @@ func main() {
 	}
 }
 
+// map is actually a pointer, map === *hmap
+// so we don't need to use &
 func countLines(f *os.File, counts map[string]int) {
 	input := bufio.NewScanner(f)
 	for input.Scan() {

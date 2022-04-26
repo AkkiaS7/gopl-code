@@ -16,7 +16,7 @@ import (
 
 func main() {
 	counts := make(map[string]int)
-	input := bufio.NewScanner(os.Stdin)
+	input := bufio.NewScanner(os.Stdin) // use ctrl+D to end input
 	for input.Scan() {
 		counts[input.Text()]++
 	}
